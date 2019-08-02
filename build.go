@@ -279,7 +279,7 @@ func (b *Build) GetCauses() ([]map[string]interface{}, error) {
 	return nil, errors.New("No Causes")
 }
 
-func (b *Build) GetParameters() []parameter {
+func (b *Build) GetParameters() []Parameter {
 	for _, a := range b.Raw.Actions {
 		if a.Parameters != nil {
 			return a.Parameters
