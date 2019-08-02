@@ -31,7 +31,7 @@ type Build struct {
 	Depth   int
 }
 
-type parameter struct {
+type Parameter struct {
 	Name  string
 	Value string
 }
@@ -59,7 +59,7 @@ type Culprit struct {
 }
 
 type generalObj struct {
-	Parameters              []parameter              `json:"parameters"`
+	Parameters              []Parameter              `json:"parameters"`
 	Causes                  []map[string]interface{} `json:"causes"`
 	BuildsByBranchName      map[string]Builds        `json:"buildsByBranchName"`
 	LastBuiltRevision       BuildRevision            `json:"lastBuiltRevision"`
